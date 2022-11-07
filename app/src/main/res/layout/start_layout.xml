@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/start_rLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start"
+    android:background="@drawable/templatescreen">
+
+    <TextView
+        android:id="@+id/startLogo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28sp"
+        android:layout_marginTop="209sp"
+        android:fontFamily="@font/galano_grotesque_demo_bold"
+        android:text="IuranWarga"
+        android:textColor="@color/pureWhite"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/startLogo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay. Discuss. Connect"
+        android:textColor="@color/pureWhite"
+        android:textSize="18sp"
+        android:layout_below="@+id/startLogo_1"
+        android:layout_marginStart="26sp"
+        />
+
+    <Button
+        android:id="@+id/startButton_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startButton_daftar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12sp"
+        android:background="@drawable/buttonblue"
+        android:fontFamily="@font/galano_grotesque_alt_demo_bold"
+        android:text="Masuk"
+        android:textColor="@color/pureWhite"
+        android:textAllCaps="false"
+        android:elevation="4sp"/>
+
+    <Button
+        android:id="@+id/startButton_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55sp"
+        android:background="@drawable/buttonwhite"
+        android:fontFamily="@font/galano_grotesque_alt_demo_bold"
+        android:text="Daftar"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:elevation="4sp"/>
+
+
+</RelativeLayout>

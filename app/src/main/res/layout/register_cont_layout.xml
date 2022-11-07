@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterCont"
+    android:background="@drawable/templatescreen"
+    >
+
+    <Button
+        android:id="@+id/register2_back"
+        android:layout_width="17sp"
+        android:layout_height="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/backicon" />
+
+    <TextView
+        android:id="@+id/daftar2Logo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="105sp"
+        android:fontFamily="@font/galano_grotesque_demo_bold"
+        android:text="Daftar"
+        android:textColor="@color/pureWhite"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/daftar2Logo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar sebagai warga"
+        android:textColor="@color/pureWhite"
+        android:textSize="18sp"
+        android:layout_below="@+id/daftar2Logo_1"
+        android:layout_marginStart="26sp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/daftar2Logo_1"
+        android:layout_marginTop="224sp"
+        android:src="@drawable/usernameicon" />
+
+    <EditText
+        android:id="@+id/regis2nikEditText"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="212sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Nomor Induk Kependudukan"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp"
+        android:inputType="number"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/daftar2Logo_1"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="273sp"
+        android:src="@drawable/cardicon" />
+
+    <EditText
+        android:id="@+id/regis2nokkEditText"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="270sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Nomor Kartu Keluarga"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp"
+        android:inputType="number"
+        />
+
+    <ImageView
+        android:layout_width="23sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="326sp"
+        android:src="@drawable/locationicon" />
+
+    <EditText
+        android:id="@+id/regis2AlamatEditText"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="317sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Alamat"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/regis2rtEditText"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="375sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="RT"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/regis2rwEditText"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0sp"
+        android:layout_marginTop="375sp"
+        android:layout_toEndOf="@+id/regis2rtEditText"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="RW"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/regis2kelurahanEditText"
+        android:layout_width="242sp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/daftar2Logo_2"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3sp"
+        android:layout_marginLeft="3sp"
+        android:layout_marginTop="375sp"
+        android:layout_marginEnd="-166sp"
+        android:layout_toEndOf="@+id/regis2rwEditText"
+        android:layout_toRightOf="@+id/regis2rwEditText"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Kelurahan"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/regis2kecamatanEditText"
+        android:layout_width="163sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28sp"
+        android:layout_marginTop="429sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Kecamatan"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/regis2kotaEditText"
+        android:layout_width="166sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="429sp"
+        android:layout_toEndOf="@+id/regis2kecamatanEditText"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Kota/Kabupaten"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/regis2kodeEditText"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="470dp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Kode Lokasi"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/regis2_regis_button"
+        android:layout_width="202sp"
+        android:layout_height="34sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31sp"
+        android:background="@drawable/buttonwhite"
+        android:text="Daftar"
+        android:fontFamily="@font/galano_grotesque_alt_demo_bold"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:elevation="4sp"
+        />
+
+</RelativeLayout>

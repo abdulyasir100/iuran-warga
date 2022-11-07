@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pureWhite"
+    android:elevation="10sp"
+    >
+
+    <ImageView
+        android:id="@+id/mini_profile"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background="@drawable/profile"
+        android:layout_margin="15sp"
+        />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-12sp"
+        android:layout_marginTop="20sp"
+        android:layout_toEndOf="@id/mini_profile"
+        android:text="Gloria Borger"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19.30 01 Jan 2019"
+        android:layout_marginStart="-12sp"
+        android:layout_toEndOf="@id/mini_profile"
+        android:layout_below="@id/nama"
+        />
+
+    <TextView
+        android:id="@+id/kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:layout_marginLeft="10sp"
+        android:layout_toEndOf="@id/history"
+        android:text="➽Berita" />
+
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/isi_konten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/isi_konten"
+            android:layout_toEndOf="@id/mini_profile"
+            android:layout_below="@id/history"
+            android:layout_marginStart="-12sp"
+            android:paddingRight="15sp"
+            />
+
+        <com.github.aakira.compoundicontextview.CompoundIconTextView
+        android:id="@+id/comment"
+        android:layout_toEndOf="@+id/mini_profile"
+        android:layout_below="@+id/isi_konten"
+        android:text="20"
+        android:textSize="20sp"
+        android:drawablePadding="4sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cit_drawableLeft="@drawable/ic_comment"
+        app:cit_iconColor="@color/navbar_blue"
+        app:cit_iconHeight="10sp"
+        app:cit_iconWidth="10sp"
+        android:layout_marginStart="200sp"
+        android:layout_marginTop="10sp"
+        />
+
+        <com.github.aakira.compoundicontextview.CompoundIconTextView
+        android:id="@+id/love"
+            android:layout_below="@+id/isi_konten"
+            android:layout_toEndOf="@+id/mini_profile"
+        android:text="50"
+        android:textSize="20sp"
+        android:drawablePadding="4sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cit_drawableLeft="@drawable/ic_like"
+        app:cit_iconColor="@color/navbar_blue"
+        app:cit_iconHeight="10sp"
+        app:cit_iconWidth="10sp"
+        android:layout_marginTop="9sp"
+            android:layout_marginLeft="100sp"
+        />
+
+
+
+
+</RelativeLayout>

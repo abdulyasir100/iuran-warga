@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+       >
+
+       <ImageView
+           android:id="@+id/foto"
+           android:layout_width="187sp"
+           android:layout_height="187sp"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginStart="0sp"
+           android:layout_marginTop="24sp"
+           android:src="@drawable/foto_profile" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/foto"
+                android:text="Gloria Borger"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="22sp"
+
+                />
+
+       <TextView
+           android:id="@+id/alamat"
+           android:layout_width="211sp"
+           android:layout_height="167sp"
+           android:layout_below="@+id/nama"
+           android:layout_alignParentStart="true"
+           android:layout_marginStart="200sp"
+           android:layout_marginTop="5sp"
+           android:layout_toEndOf="@+id/foto"
+           android:maxWidth="200sp"
+           android:text="Kerto Raharjo RT 1, Lowokwaru\n"
+           android:textColor="@color/black"
+           android:textSize="14sp" />
+
+       <Button
+           android:id="@+id/editprofil"
+           android:layout_width="151sp"
+           android:layout_height="32sp"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginStart="235sp"
+           android:layout_marginTop="225sp"
+           android:background="@drawable/custom_button"
+           android:text="Edit Profil"
+           android:textColor="@color/pureWhite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+
+        <LinearLayout
+            android:id="@+id/minimenu"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/profil_postingan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/navbar_blue"
+                android:text="POSTINGAN"
+                android:textColor="@color/pureWhite" />
+
+            <Button
+                android:id="@+id/profil_tentang"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/navbar_blue"
+                android:text="TENTANG"
+                android:textColor="@color/pureWhite" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/profil_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_below="@+id/minimenu"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:id="@+id/tentang_layout"
+            android:layout_width="412sp"
+            android:layout_height="403sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0sp"
+            android:layout_marginTop="61sp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/nama_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="5sp"
+                android:text="Nama Lengkap"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/nama2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="2sp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="32sp"
+                android:text="Gloria Borger"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tempat_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0sp"
+                android:layout_marginTop="61sp"
+
+                android:text="Tempat Tanggal Lahir"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tempat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3sp"
+                android:layout_marginLeft="4sp"
+                android:layout_marginTop="80sp"
+                android:text="Malang, 01 Desember 1990"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/alamat_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="1sp"
+                android:layout_marginTop="109sp"
+
+                android:text="Alamat"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/alamat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4sp"
+                android:layout_marginLeft="4sp"
+                android:layout_marginTop="126sp"
+                android:text="@string/alamat"
+
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:maxWidth="400sp"
+                />
+
+            <TextView
+                android:id="@+id/nik_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="2sp"
+                android:layout_marginTop="182sp"
+                android:text="Nomor Induk Kependudukan"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/nik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4sp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="205sp"
+                android:text="@string/nik"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kk_line"
+                android:layout_width="331sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4sp"
+                android:layout_marginTop="238sp"
+                android:text="Nomor Kartu Keluarga"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/kk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="260sp"
+                android:text="@string/kk"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

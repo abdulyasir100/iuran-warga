@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <com.github.aakira.compoundicontextview.CompoundIconTextView
+        android:id="@+id/input_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="52dp"
+        android:background="@color/pureWhite"
+        android:drawablePadding="20sp"
+        android:ems="16"
+        android:inputType="text"
+        android:outlineSpotShadowColor="#4199F5"
+        android:text="Masukkan kata kunci..."
+        android:textColor="#4199F5"
+        android:textSize="20sp"
+        app:cit_drawableLeft="@drawable/searchicon"
+        app:cit_iconColor="@color/navbar_blue"
+        app:cit_iconHeight="10sp"
+        app:cit_iconWidth="10sp" />
+
+</RelativeLayout>

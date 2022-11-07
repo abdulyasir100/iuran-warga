@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Iuran Warga</string>
+    <string name="title_activity_beranda">Beranda</string>
+    <string name="icon">icon</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="isi_konten">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur pellentesque magna vitae blandit finibus. Cras sed erat dapibus, semper risus vel, mollis nulla.
+        Integer vel dolor ornare purus finibus tincidunt sed ut libero.</string>
+    <string name="alamat">Kerto Raharjo No.10 RT 01 RW 01
+        Ketawanggede, Lowokwaru
+        Kota Malang</string>
+    <string name="nik">198212144551234</string>
+    <string name="kk">19021341512324</string>
+</resources>

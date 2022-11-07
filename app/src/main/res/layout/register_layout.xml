@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/templatescreen">
+
+    <Button
+        android:id="@+id/register_back"
+        android:layout_width="17sp"
+        android:layout_height="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/backicon" />
+
+    <TextView
+        android:id="@+id/daftarLogo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="105sp"
+        android:fontFamily="@font/galano_grotesque_demo_bold"
+        android:text="Daftar"
+        android:textColor="@color/pureWhite"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/daftarLogo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar sebagai warga"
+        android:textColor="@color/pureWhite"
+        android:textSize="18sp"
+        android:layout_below="@+id/daftarLogo_1"
+        android:layout_marginStart="26sp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/daftarLogo_1"
+        android:layout_marginTop="224sp"
+        android:src="@drawable/usericon" />
+
+    <EditText
+        android:id="@+id/regisNamaEditText"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="212sp"
+        android:hint="Nama"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:backgroundTint="@color/pureWhite"
+        android:textSize="12sp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="271sp"
+        android:src="@drawable/emailicon" />
+
+    <EditText
+        android:id="@+id/regisEmailEditText"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="260sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Alamat Email"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp"
+        android:inputType="textEmailAddress"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="314sp"
+        android:src="@drawable/telpicon" />
+
+    <EditText
+        android:id="@+id/regisTelpEditText"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="310sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Nomot Telepon"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp"
+        android:inputType="phone"
+        />
+
+    <ImageView
+        android:layout_width="23sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="369sp"
+        android:src="@drawable/calendaricon" />
+
+    <EditText
+        android:id="@+id/regisTempatLahirEditText"
+        android:layout_width="149sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="360sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Alamat"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/register_lanjut_button"
+        android:layout_width="202sp"
+        android:layout_height="34sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31sp"
+        android:background="@drawable/buttonwhite"
+        android:text="Lanjutkan"
+        android:textAllCaps="false"
+        android:fontFamily="@font/galano_grotesque_alt_demo_bold"
+        android:textColor="@color/black"
+        android:elevation="4sp"
+        />
+
+    <EditText
+        android:id="@+id/regisBulanEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="282sp"
+        android:layout_marginTop="360sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Bulan"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/regisTanggalEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="217sp"
+        android:layout_marginTop="360sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Tanggal"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp"
+        android:paddingRight="15sp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/regisTahunEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="322sp"
+        android:layout_marginTop="360sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Tahun"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp"
+        android:inputType="number"
+        />
+
+    <ImageView
+        android:layout_width="23sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27sp"
+        android:layout_marginTop="414sp"
+        android:src="@drawable/passwordicon" />
+
+    <EditText
+        android:id="@+id/regisPasswordEditText"
+        android:layout_width="303sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="59sp"
+        android:layout_marginTop="400sp"
+        android:layout_marginBottom="120sp"
+        android:backgroundTint="@color/pureWhite"
+        android:hint="Kata Sandi"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:textSize="12sp"
+        android:inputType="textPassword"
+        />
+
+</RelativeLayout>

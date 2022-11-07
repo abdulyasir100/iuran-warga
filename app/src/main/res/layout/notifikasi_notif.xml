@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/notif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:elevation="10sp"
+
+        >
+
+            <ImageView
+                android:id="@+id/mini_profile"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:background="@drawable/profile"
+                android:layout_margin="15sp"
+            />
+             <TextView
+                android:id="@+id/pesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-12sp"
+                android:layout_marginTop="20sp"
+                android:layout_toEndOf="@id/mini_profile"
+                android:text="Pesan Baru"
+                 android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="26sp"
+            android:layout_toEndOf="@id/mini_profile"
+            android:text="19:30 01 Jan 2019"
+            android:textColor="#8B8989" />
+            <TextView
+                android:id="@+id/pengirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pesan"
+                android:layout_toEndOf="@id/mini_profile"
+                android:text="Poppy Harlow mengirimkan pesan baru"
+                android:layout_marginStart="-12sp"
+                android:textColor="#333232"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

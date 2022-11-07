@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_rLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/templatescreen">
+
+    <Button
+        android:id="@+id/login_back"
+        android:layout_width="17sp"
+        android:layout_height="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/backicon" />
+
+    <TextView
+        android:id="@+id/loginLogo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="105sp"
+        android:fontFamily="@font/galano_grotesque_demo_bold"
+        android:text="Masuk"
+        android:textColor="@color/pureWhite"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/loginLogo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akses IuranWarga"
+        android:textColor="@color/pureWhite"
+        android:textSize="18sp"
+        android:layout_below="@+id/loginLogo_1"
+        android:layout_marginStart="26sp"
+        />
+
+    <ImageView
+        android:id="@+id/nikLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/loginLogo_1"
+        android:layout_marginTop="223sp"
+        android:src="@drawable/usernameicon" />
+
+    <ImageView
+        android:id="@+id/passLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275sp"
+        android:layout_marginLeft="25sp"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/passwordicon" />
+
+    <EditText
+        android:id="@+id/loginnikEditText"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="212sp"
+        android:hint="Nomor Induk Kependudukan"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:backgroundTint="@color/pureWhite"
+        android:textSize="12sp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/loginpasswordEditText"
+        android:layout_below="@+id/loginnikEditText"
+        android:paddingTop="42sp"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="230sp"
+        android:hint="Kata Sandi"
+        android:textColor="@color/pureWhite"
+        android:textColorHint="@color/pureWhiteAlpha"
+        android:backgroundTint="@color/pureWhite"
+        android:textSize="12sp"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/loginLupaSandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="316sp"
+        android:layout_marginEnd="47sp"
+        android:text="Lupa Kata Sandi"
+        android:textColor="@color/pureWhiteAlpha"
+        android:textColorHighlight="@color/pureWhite"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/loginButton_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33sp"
+        android:fontFamily="@font/galano_grotesque_alt_demo_bold"
+        android:background="@drawable/buttonwhite"
+        android:text="Masuk"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:elevation="4sp"
+        />
+
+</RelativeLayout>

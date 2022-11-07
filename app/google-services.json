@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "671799717123",
+    "firebase_url": "https://iuran-warga.firebaseio.com",
+    "project_id": "iuran-warga",
+    "storage_bucket": "iuran-warga.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671799717123:android:f02beb3b85a0c7c8",
+        "android_client_info": {
+          "package_name": "com.company.mpsi.iuranwarga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671799717123-19h1oc0p3hchm1jc5k3mbt9u3dnq333u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.mpsi.iuranwarga",
+            "certificate_hash": "de04e3b38411ef161edeae6e2b4dd9321c07d742"
+          }
+        },
+        {
+          "client_id": "671799717123-po5oh4t1m2ktn4g7g90t2dck91dtgurj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmz_sPiOxYAb9wXP_2zMgRWAjj3pnzeCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671799717123-po5oh4t1m2ktn4g7g90t2dck91dtgurj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

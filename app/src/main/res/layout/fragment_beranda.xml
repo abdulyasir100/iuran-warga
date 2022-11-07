@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BerandaFragment">
+
+    <ImageView
+        android:id="@+id/beranda_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8sp"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/beranda_navbar" />
+
+    <Button
+        android:id="@+id/brndnav_hubungi"
+        android:layout_width="24sp"
+        android:layout_height="26sp"
+        android:layout_alignStart="@+id/beranda_navbar"
+        android:layout_alignTop="@+id/beranda_navbar"
+        android:layout_alignBottom="@+id/beranda_navbar"
+        android:layout_marginStart="32sp"
+        android:layout_marginTop="23sp"
+        android:layout_marginEnd="78sp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/chaticon" />
+
+    <TextView
+        android:id="@+id/brndnav_hubungi_text"
+        android:layout_width="56sp"
+        android:layout_height="27sp"
+        android:layout_alignStart="@+id/beranda_navbar"
+        android:layout_alignTop="@+id/beranda_navbar"
+        android:layout_alignBottom="@+id/beranda_navbar"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="58sp"
+        android:layout_marginEnd="299sp"
+        android:layout_marginBottom="8sp"
+        android:text="Hubungi\nPengurus"
+        android:textAlignment="center"
+        android:textColor="@color/pureWhite"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/brndnav_bayar"
+        android:layout_width="25sp"
+        android:layout_height="26sp"
+        android:layout_alignStart="@+id/beranda_navbar"
+        android:layout_alignTop="@+id/beranda_navbar"
+        android:layout_alignBottom="@+id/beranda_navbar"
+        android:layout_marginStart="131sp"
+        android:layout_marginTop="24sp"
+        android:layout_marginEnd="210sp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/rpicon" />
+
+    <TextView
+        android:id="@+id/brndnav_bayar_text"
+        android:layout_width="61sp"
+        android:layout_height="15sp"
+        android:layout_alignStart="@+id/beranda_navbar"
+        android:layout_alignTop="@+id/beranda_navbar"
+        android:layout_alignBottom="@+id/beranda_navbar"
+        android:layout_marginStart="111sp"
+        android:layout_marginTop="60sp"
+        android:layout_marginEnd="193sp"
+        android:layout_marginBottom="18sp"
+        android:text="Bayar Iuran"
+        android:textAlignment="center"
+        android:textColor="@color/pureWhite"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/brndnav_lapor"
+        android:layout_width="22sp"
+        android:layout_height="21sp"
+        android:layout_alignTop="@+id/beranda_navbar"
+        android:layout_alignEnd="@+id/beranda_navbar"
+        android:layout_alignBottom="@+id/beranda_navbar"
+        android:layout_marginTop="25sp"
+        android:layout_marginEnd="119sp"
+        android:layout_marginBottom="47sp"
+        android:background="@drawable/laporanicon" />
+
+    <TextView
+        android:id="@+id/brndnav_lapor_text"
+        android:layout_width="66sp"
+        android:layout_height="27sp"
+        android:layout_alignTop="@+id/beranda_navbar"
+        android:layout_alignEnd="@+id/beranda_navbar"
+        android:layout_alignBottom="@+id/beranda_navbar"
+        android:layout_marginTop="58sp"
+        android:layout_marginEnd="97sp"
+        android:layout_marginBottom="10sp"
+        android:text="Laporan\nKeuangan"
+        android:textAlignment="center"
+        android:textColor="@color/pureWhite"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/brndnav_post"
+        android:layout_width="21sp"
+        android:layout_height="21sp"
+        android:layout_alignTop="@+id/beranda_navbar"
+        android:layout_alignEnd="@+id/beranda_navbar"
+        android:layout_alignBottom="@+id/beranda_navbar"
+        android:layout_marginTop="26sp"
+        android:layout_marginEnd="29sp"
+        android:layout_marginBottom="48sp"
+        android:background="@drawable/plusicon" />
+
+    <TextView
+        android:id="@+id/brndnav_post_text"
+        android:layout_width="65sp"
+        android:layout_height="26sp"
+        android:layout_alignTop="@+id/beranda_navbar"
+        android:layout_alignEnd="@+id/beranda_navbar"
+        android:layout_alignBottom="@+id/beranda_navbar"
+        android:layout_marginTop="57sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginBottom="10sp"
+        android:text="Tulis\nPostingan"
+        android:textAlignment="center"
+        android:textColor="@color/pureWhite"
+        android:textSize="11sp" />
+
+</RelativeLayout>

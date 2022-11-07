@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KonfirmasiPembayaran">
+
+    <include
+        android:id="@+id/konfirmasi_pembayaran_toolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/boardTagihan"
+        android:layout_width="357dp"
+        android:layout_height="118dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="78dp"
+        android:background="@drawable/buttonwhite"
+        android:elevation="5sp">
+
+        <TextView
+            android:id="@+id/konfirmasi_pembayaran_tagihan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="276dp"
+            android:fontFamily="@font/freeroad_black"
+            android:text="Tagihan"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/konfirmasi_pembayaran_uang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="302dp"
+            android:fontFamily="@font/freeroad_regular"
+            android:text="Rp. 0,00"
+            android:textColor="@color/blackAlpha"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/konfirmasi_pembayaran_transfer"
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="13dp"
+            android:fontFamily="@font/freeroad_black"
+            android:text="Transfer ke Rekening Bank BNI"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/konfirmasi_pembayaran_rekening"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="93dp"
+            android:fontFamily="@font/freeroad_regular"
+            android:text="1234567890 BNI Bu Siti"
+            android:textColor="@color/blackAlpha"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/konfirmasi_pembayaran_confirm"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="221dp"
+        android:background="@drawable/buttonblue"
+        android:elevation="5sp"
+        android:text="Konfirmasi"
+        android:textColor="@color/pureWhite"
+        android:textAllCaps="false"
+        android:fontFamily="@font/galano_grotesque_demo_bold"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>
